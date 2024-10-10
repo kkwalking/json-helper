@@ -114,3 +114,58 @@ button:hover {
     transform: translateX(-50%);
     margin-bottom: 0;
 }
+
+/* 添加以下样式 */
+#tab-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 5px;
+}
+
+#tab-list {
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    overflow-x: auto;
+    scrollbar-width: none; /* 对于 Firefox */
+    -ms-overflow-style: none; /* 对于 Internet Explorer 和 Edge */
+}
+
+#tab-list li {
+    padding: 5px 10px;
+    margin-right: 5px;
+    background-color: #f0f0f0;
+    border-radius: 5px 5px 0 0;
+    cursor: pointer;
+    border: 1px solid #ddd;
+    border-bottom: none;
+}
+
+#tab-list li.active {
+    background-color: #fff;
+    border-bottom: 1px solid #fff;
+    margin-bottom: -1px;
+}
+
+#new-tab-btn {
+    padding: 5px 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+#new-tab-btn:hover {
+    background-color: #45a049;
+}
+
+/* 添加新的样式来隐藏 Webkit 浏览器的滚动条 */
+#tab-list::-webkit-scrollbar {
+    display: none;
+}
