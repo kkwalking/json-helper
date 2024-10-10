@@ -1,0 +1,116 @@
+body {
+    font-family: Arial, sans-serif;
+    padding: 10px;
+    margin: 0;
+    box-sizing: border-box;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+    margin: 0 0 10px 0;
+    font-size: 1.2em;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    overflow: hidden;
+}
+
+textarea, pre {
+    width: 100%;
+    border: 1px solid #ddd;
+    padding: 10px;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+textarea {
+    height: 30%;
+    resize: vertical;
+}
+
+.controls {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+button {
+    padding: 5px 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 14px;
+    border-radius: 4px;
+    height: 30px;
+    min-width: 60px;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+#format {
+    margin-right: 10px;
+}
+
+.options {
+    display: flex;
+    align-items: center;
+}
+
+.indent-options, .font-size-options {
+    display: flex;
+    align-items: center;
+    margin-left: 10px;
+}
+
+.indent-options label, .font-size-options label {
+    margin-right: 5px;
+    font-size: 14px;
+}
+
+#indent, #font-size {
+    height: 30px;
+    font-size: 14px;
+    border-radius: 4px;
+    border: 1px solid #ddd;
+}
+
+.output-container {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    position: relative;
+    overflow: hidden;
+}
+
+#output {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 40px; /* 为复制按钮留出空间 */
+    overflow-y: auto;
+    background-color: #f8f8f8;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+}
+
+#copy {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-bottom: 0;
+}
