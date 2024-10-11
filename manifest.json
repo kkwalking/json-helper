@@ -1,11 +1,11 @@
 {
   "manifest_version": 3,
-  "name": "JSON格式化工具",
+  "name": "Json Format Helper",
   "version": "1.0",
-  "description": "在浏览器侧边栏格式化JSON字符串",
+  "description": "在浏览器侧边栏格式化Json字符串",
   "permissions": ["sidePanel"],
   "action": {
-    "default_title": "打开JSON格式化工具"
+    "default_title": "打开Json Format Helper"
   },
   "side_panel": {
     "default_path": "sidepanel.html"

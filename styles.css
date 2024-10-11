@@ -143,6 +143,8 @@ button:hover {
     cursor: pointer;
     border: 1px solid #ddd;
     border-bottom: none;
+    display: flex;
+    align-items: center;
 }
 
 #tab-list li.active {
@@ -168,4 +170,35 @@ button:hover {
 /* 添加新的样式来隐藏 Webkit 浏览器的滚动条 */
 #tab-list::-webkit-scrollbar {
     display: none;
+}
+
+/* 现有的样式保持不变 */
+
+/* 删除按钮样式 */
+.delete-btn {
+    background-color: #4CAF50; /* 绿色背景 */
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 0; /* 移除内边距 */
+    margin-left: 5px;
+    font-size: 14px; /* 稍微增加字体大小 */
+    border-radius: 50%; /* 保持圆形 */
+    width: 16px; /* 固定宽度 */
+    height: 16px; /* 固定高度，与宽度相同 */
+    min-width: 16px; /* 确保最小宽度 */
+    display: flex; /* 使用 flex 布局 */
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.3s ease;
+    line-height: 1; /* 确保文本垂直居中 */
+}
+
+.delete-btn:hover {
+    background-color: #f44336; /* 鼠标悬停时变为红色 */
+}
+
+/* 调整标签页列表样式 */
+#tab-list li span {
+    margin-right: 2px; /* 减小标签文本和删除按钮之间的间距 */
 }
